@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN-IN SAMPLE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"  
+   referrerpolicy="no-referrer" /> 
+    <style>
+        
+        .outer{
+            width: 50%;
+            height:500px; 
+            position: relative;
+            margin:auto;
+            margin-top: 100px;
+            font-family: sans-serif;
+            box-shadow: 2px 2px 8px grey;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .div1{
+            position: absolute;
+            left: 0;
+            width:50%;
+            height: 500px;
+            text-align: center;
+            margin: auto;
+            padding:50px 0;
+        
+        }
+        
+        .flex{
+            display: flex;
+            justify-content: center;
+           
+        }
+        .logo{
+            margin: 10px;
+            width: 32px;
+            height:32px;
+            border:2px solid rgb(105, 228, 239);
+            border-radius: 50%; /* border radius 50% makes it a circle */
+            font-size: 15px;
+            font-weight: bolder;
+            color: black;
+           
+        }
+
+        i{
+            padding-top: 8px;
+        }
+
+        .div2{
+            background-size:cover;
+            color: white;
+            background-color: rgb(105, 228, 239);
+            position: absolute;
+            right:0 ;
+            width: 50%;
+            height:500px;
+            text-align: center;
+            margin: auto;
+            padding-top: 20%;     
+           
+        }
+        a:link{
+            color:black;
+        }
+        a{
+          text-decoration: none;  
+        }
+        .inner1, .inner2{
+            color: white;
+            margin: auto;
+            width:150px;
+            height: 30px;
+            border:1px solid white;
+            border-radius: 30px;
+            text-align: center;
+            font-weight: bolder;   
+        }
+        
+        .inner1{
+            background-color: rgb(105, 228, 239); 
+ 
+        }
+        .inner2{
+            background-color:transparent;
+        }
+        .box{
+            width:250px;
+            height:30px;
+            background-color: rgb(234, 236, 238);
+            border-color: white;
+            border: none; 
+            /* border :none; removes the default border shadow */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="div1">
+            <h1>Sign in</h1>
+            <div class="flex">
+                <div class="logo"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="logo"><i class="fa-brands fa-google-plus-g"></i></div>
+                <div class="logo"><i class="fa-brands fa-linkedin-in"></i></div>
+            </div><br>
+            
+            <form>
+
+                <input type="email" class="box" placeholder="User Email" required/><br><br>
+               
+                <input type = "password" name = "password" class="box" placeholder="Password" required /><br>
+                <br>
+          
+                <a href="#" >Forgot your password?</a><br><br>
+                
+                <button class="inner1" type="submit">SIGN IN</button>
+                <!-- <div class="inner1"><a style="text-decoration: none;" href="in">SIGN IN</a></div> -->
+           
+        </div>
+    </form>
+
+    <form>
+        <div class="div2">
+            <h1>Sign Up</h1>
+            <p>Sign up here if you don't have account</p>
+            <!-- <div class="inner2"><a style="text-decoration: none;" href="up">SIGN UP</a></div> -->
+            <button class="inner2" type="submit">SIGN UP</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
